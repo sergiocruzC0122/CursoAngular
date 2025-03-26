@@ -1,13 +1,18 @@
 <h1>{{ nameSignal() }}</h1>
 
 <dl>
-  <dd>Nombre: {{ nameSignal() }}</dd>
+  <td>Nombre:</td>
+  <dd>{{ nameSignal() }}</dd>
 
-  <dd>Edad: {{ ageSignal() }}</dd>
+  <td>Edad:</td>
+  <dd>{{ ageSignal() }}</dd>
   
-  <dd>Método: {{ getHeroDescription() }}</dd>
+  <td>Método:</td>
+  <dd>{{ heroDescription() }}</dd>
 
-  <dd>Capitalizado: {{ heroDescriptionUpperCase()}} </dd> 
+  <td>Capitalizado:</td>
+  <!-- <dd>{{ capitalizedName()}} </dd>  -->
+  <dd>{{ nameSignal() | uppercase }} </dd> 
 </dl>
 
 <button (click)="changeHeroName()" class="btn btn-primary mx-2">
@@ -19,3 +24,5 @@
 </button>
 
 <button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+
+
