@@ -12,5 +12,5 @@ interface gifsOption {
   templateUrl: './gifs-list.component.html',
 })
 export class GifsListComponent { 
-  gifs= input.required<string[]>();
+  gifs = input.required<string[]>();
 }
